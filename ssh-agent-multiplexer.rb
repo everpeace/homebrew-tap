@@ -5,13 +5,13 @@
 class SshAgentMultiplexer < Formula
   desc "ssh-agent-multiplexer: a small program which multiplexes running ssh agents"
   homepage "https://github.com/everpeace/ssh-agent-multiplexer"
-  version "0.4.0"
+  version "0.5.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/everpeace/ssh-agent-multiplexer/releases/download/v0.4.0/ssh-agent-multiplexer_0.4.0_darwin_amd64.tar.gz"
-      sha256 "c31064ff9691668cd8bf1efdf4e67ad78274156aaff5c927f7686c5b7de41c8a"
+      url "https://github.com/everpeace/ssh-agent-multiplexer/releases/download/v0.5.0/ssh-agent-multiplexer_0.5.0_darwin_amd64.tar.gz"
+      sha256 "ea7f1a7627ea0c382c7b6816ed1b3d534e4bdf86de5464720fe43185f30d7664"
 
       def install
         bin.install "ssh-agent-multiplexer"
@@ -19,8 +19,8 @@ class SshAgentMultiplexer < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/everpeace/ssh-agent-multiplexer/releases/download/v0.4.0/ssh-agent-multiplexer_0.4.0_darwin_arm64.tar.gz"
-      sha256 "8a92af3bc923f403641094f466f9b3bee4631e8d016535922255ec9fffc32908"
+      url "https://github.com/everpeace/ssh-agent-multiplexer/releases/download/v0.5.0/ssh-agent-multiplexer_0.5.0_darwin_arm64.tar.gz"
+      sha256 "1a47d3081dc2086d449729b657a2214e75f36b16f41369c40eefc35fb67b7692"
 
       def install
         bin.install "ssh-agent-multiplexer"
@@ -31,16 +31,16 @@ class SshAgentMultiplexer < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/everpeace/ssh-agent-multiplexer/releases/download/v0.4.0/ssh-agent-multiplexer_0.4.0_linux_amd64.tar.gz"
-      sha256 "326c949b09578cdaf05334446f99444e20522b2faa2f2478a07e1aac79f3af0f"
+      url "https://github.com/everpeace/ssh-agent-multiplexer/releases/download/v0.5.0/ssh-agent-multiplexer_0.5.0_linux_amd64.tar.gz"
+      sha256 "c9b12e7961face9b308fb40f190c0519739dbfdef12ecdd44d9745cbc7d666eb"
       def install
         bin.install "ssh-agent-multiplexer"
         bin.install "ssh-agent-mux-select"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/everpeace/ssh-agent-multiplexer/releases/download/v0.4.0/ssh-agent-multiplexer_0.4.0_linux_arm64.tar.gz"
-      sha256 "915e3581a5932f03371b29efd25551ff76cc7d1f316351835716c67688533148"
+      url "https://github.com/everpeace/ssh-agent-multiplexer/releases/download/v0.5.0/ssh-agent-multiplexer_0.5.0_linux_arm64.tar.gz"
+      sha256 "c52bef95843b6ed553d311ca611a96f1472f850f67c7169b1d081f353fadfb68"
       def install
         bin.install "ssh-agent-multiplexer"
         bin.install "ssh-agent-mux-select"
